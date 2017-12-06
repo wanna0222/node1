@@ -1,0 +1,9 @@
+1 解压到某个路径
+2 尝试运行程序
+3 需要使用命令提示创建进行服务安装(以管理员身份运行)
+4 将当前工作目录切换到执行路径下 cd xxxxx
+5 httpd.exe -xxxx 输入错误命令  查看命令列表，找到 -k install这一条
+6 执行 httpd.exe -k install -n apache    -n可以省略，默认为Apache24
+7 尝试打开软件，失败后，  httpd.exe -t 进行语法检查
+8 根据报错，找到对应文件修改对应的位置  ServerRoot   DocumentRoot  <Directory 
+9 运行服务器
